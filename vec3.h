@@ -98,6 +98,13 @@ inline vec3 operator/(const vec3 &v, const double s) {
     return {v.e[0] / s, v.e[1] / s, v.e[2] / s};
 }
 
+inline vec3& operator/=(vec3 &v, const double s) {
+    v.e[0] /= s;
+    v.e[1] /= s;
+    v.e[2] /= s;
+    return v;
+}
+
 inline double dot(const vec3 &v1, const vec3 &v2) {
     return v1[0]*v2[0] + v1[1]*v2[1] + v1[2]*v2[2];
 }

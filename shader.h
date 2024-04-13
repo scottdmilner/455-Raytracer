@@ -16,6 +16,7 @@ public:
     color diffuse_color;
     color specular_color;
     double gloss_factor;
+    double reflection;
 
     shader() = default;
 };

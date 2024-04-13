@@ -28,6 +28,7 @@ public:
 
     bool hit(const ray &r, interval ray_t, hit_record &rec) const override{
         hit_record temp_rec;
+        temp_rec.ray_depth = rec.ray_depth;
         bool hit_anything = false;
         auto closest_so_far = ray_t.max;
 

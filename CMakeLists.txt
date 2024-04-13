@@ -15,4 +15,8 @@ add_executable(ray_tracer main.cpp
         interval.h
         camera.h
         shader.h
-        parris.h)
+        parris.h
+        tri.h
+        suzanne.h
+        world.h
+        light.h)

@@ -16,6 +16,7 @@ public:
     double t;
     // material info
     shader shader;
+    int ray_depth;
 };
 
 class prim {
