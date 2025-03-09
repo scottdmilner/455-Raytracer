@@ -14,18 +14,19 @@ public:
     suzanne() {
         for (int i = 0; i < 968; ++i) {
             monkey.add(make_shared<tri>(
-                    point3{geo[i][0][0], geo[i][0][2], -geo[i][0][1]} * 0.35 - point3{0, 0, 2},
-                    point3{geo[i][1][0], geo[i][1][2], -geo[i][1][1]} * 0.35 - point3{0, 0, 2},
-                    point3{geo[i][2][0], geo[i][2][2], -geo[i][2][1]} * 0.35 - point3{0, 0, 2},
+                    point3{geo[i][0][0], geo[i][0][2], -geo[i][0][1]} * 0.35 - point3{0, 0, 1},
+                    point3{geo[i][1][0], geo[i][1][2], -geo[i][1][1]} * 0.35 - point3{0, 0, 1},
+                    point3{geo[i][2][0], geo[i][2][2], -geo[i][2][1]} * 0.35 - point3{0, 0, 1},
                     false,
                     shader{
-                        0.9,
-                        0.9,
-                        0.2,
-                        {0.0,0.6,8.0},
-                        {1.0, 1.0, 1.0},
-                        32.0,
+                        1.0,
                         0.0,
+                        {0.2,0.2,0.9},
+                        {1,1,1},
+                        0.2,
+                        0.05,
+                        0.9,
+                        {.6,1,.6}
                     }));
         }
     }

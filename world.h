@@ -9,6 +9,7 @@
 #include "prim_list.h"
 #include "light.h"
 
+
 class world {
 public:
     prim_list scene;

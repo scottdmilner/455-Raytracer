@@ -11,12 +11,15 @@
 class shader {
 public:
     double diffuse_coefficient;
-    double specular_coefficient;
+//    double specular_coefficient;
     double ambient_coefficient;
     color diffuse_color;
     color specular_color;
-    double gloss_factor;
+//    double gloss_factor;
     double reflection;
+    double roughness;
+    double transmission;
+    color transmission_color;
 
     shader() = default;
 };

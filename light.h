@@ -6,8 +6,10 @@
 #define RAY_TRACER_LIGHT_H
 
 
-class light {
+#include "color.h"
 
+class light {
+virtual color col() const = 0;
 };
 
 

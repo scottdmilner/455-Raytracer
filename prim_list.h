@@ -9,7 +9,6 @@
 #include <vector>
 
 #include "prim.h"
-#include "shader.h"
 
 using std::shared_ptr;
 using std::make_shared;
